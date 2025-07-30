@@ -1,0 +1,8 @@
+[package]
+url = "https://mirrors.nju.edu.cn/gnu/m4/m4-1.4.19.tar.xz"
+ref = "1.4.19"
+supported_hosts = ["linux", "darwin"]
+
+[[build_configs]]
+build_system = "makefiles"
+dev_dependencies = ["m4@1.4.19"]

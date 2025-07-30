@@ -1,0 +1,14 @@
+diff --git a/configure.ac b/configure.ac
+index 94d5f72..a0099db 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -21,6 +21,9 @@ dnl  PERFORMANCE OF THIS SOFTWARE.
+ dnl
+ dnl Process this file with autoconf to create configure.
+ 
++m4_pattern_allow([^m4_ifval$])
++m4_pattern_allow([^AC_CHECK_FILE$])
++
+ AC_PREREQ([2.60])
+ # keep version in sync with meson.build
+ AC_INIT([xorgproto], [2024.1],

@@ -1,0 +1,17 @@
+[package]
+url = "https://gitlab.freedesktop.org/xorg/lib/libx11.git"
+ref = "libX11-1.8.11"
+
+[[build_configs]]
+pattern = "*linux*"
+build_system = "makefiles"
+dependencies = [
+    "xorgproto@2024.1",
+    "libxcb@1.17.0",
+    "libxtrans@1.5.2"
+]
+dev_dependencies = ["macros@1.20.2", "libxtrans@1.5.2"]
+options = ["--with-keysymdefdir=${DEPS_DIR}/include/X11"]
+
+# Note:
+# This library support linux only.

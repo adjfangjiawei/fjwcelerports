@@ -1,0 +1,11 @@
+[package]
+url = "https://mirrors.nju.edu.cn/gnu/gettext/gettext-0.25.1.tar.xz"
+ref = "v0.25"
+supported_hosts = ["linux", "darwin"]
+
+[[build_configs]]
+build_system = "makefiles"
+dependencies = ["gnulib@master"]
+dev_dependencies = ["automake@1.18"]
+envs = ["GNULIB_SRCDIR=${BUILDTREES_DIR}/gnulib@master/src"]
+options = ["--disable-java", "--disable-d"]

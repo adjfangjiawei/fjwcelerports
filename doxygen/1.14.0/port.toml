@@ -1,0 +1,6 @@
+[package]
+url = "https://github.com/doxygen/doxygen.git"
+ref = "Release_1_14_0"
+
+[[build_configs]]
+build_system = "cmake"

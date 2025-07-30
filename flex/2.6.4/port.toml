@@ -1,0 +1,14 @@
+[package]
+# Use release archive instead of git repo.
+# otherwise, compiling flex requires bootstrapping, 
+# which means you need to install a lower version of flex locally in advance.
+url = "https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz"
+ref = "2.6.4"
+
+[[build_configs]]
+pattern = "*linux*"
+build_system = "makefiles"
+dev_dependencies = ["autoconf@2.72", "gettext@0.25", "libtool@2.5.4"]
+
+# Note:
+# This library support linux only.

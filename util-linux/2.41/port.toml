@@ -1,0 +1,19 @@
+[package]
+url = "https://github.com/util-linux/util-linux.git"
+ref = "v2.41"
+
+[[build_configs]]
+pattern = "*linux*"
+build_system = "makefiles"
+envs = [
+    "CFLAGS=-isystem ${DEPS_DIR}/include/python3.11",
+    "CXXFLAGS=-isystem ${DEPS_DIR}/include/python3.11",
+]
+dependencies = ["sqlite3@3.49.0", "cpython@3.11.13"]
+dev_dependencies = ["flex@2.6.4", "bison@3.8.2", "ncurses@6.5"]
+options = [
+    "--disable-makeinstall-chown",
+]
+
+# Note:
+# This library support linux only.

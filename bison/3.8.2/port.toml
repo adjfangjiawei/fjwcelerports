@@ -1,0 +1,11 @@
+[package]
+url = "https://mirrors.nju.edu.cn/gnu/bison/bison-3.8.2.tar.xz"
+ref = "3.8.2"
+
+[[build_configs]]
+pattern = "*linux*"
+build_system = "makefiles"
+dev_dependencies = ["m4@1.4.19"]
+
+# Note:
+# This library support linux only.

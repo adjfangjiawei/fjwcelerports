@@ -1,0 +1,20 @@
+[package]
+url = "https://github.com/netwide-assembler/nasm.git"
+ref = "nasm-2.16.03"
+
+[[build_configs]]
+pattern = "*linux*"
+build_system = "makefiles"
+patches = ["fix_install.patch"]
+build_in_source = true
+dev_dependencies = ["automake@1.18", "libtool@2.5.4"]
+
+[[build_configs]]
+pattern = "x86_64-windows*"
+url = "https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/win64/nasm-2.16.03-win64.zip"
+build_system = "prebuilt"
+post_install = [
+    "cmake -E make_directory ${PACKAGE_DIR}/bin",
+    "cmake -E rename ${PACKAGE_DIR}/nasm.exe ${PACKAGE_DIR}/bin/nasm.exe",
+    "cmake -E rename ${PACKAGE_DIR}/ndisasm.exe ${PACKAGE_DIR}/bin/ndisasm.exe"
+]

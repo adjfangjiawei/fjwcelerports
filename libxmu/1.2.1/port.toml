@@ -1,0 +1,11 @@
+[package]
+url = "https://gitlab.freedesktop.org/xorg/lib/libxmu.git"
+ref = "libXmu-1.2.1"
+
+[[build_configs]]
+pattern = "*linux*"
+build_system = "makefiles"
+dev_dependencies = ["macros@1.20.2"]
+
+# Note:
+# This library support linux only.

@@ -1,0 +1,40 @@
+[package]
+url = "https://github.com/libffi/libffi.git"
+ref = "v3.4.8"
+
+# =============== build for linux ============ #
+[[build_configs]]
+pattern = "*linux*"
+build_system = "makefiles"
+dev_dependencies = ["macros@1.20.2", "libtool@2.5.4"]
+options = [
+    "--disable-docs",
+    "--enable-portable-binary",
+    "--disable-multi-os-directory",
+]
+
+# =============== build for windows ============ #
+[[build_configs]]
+pattern = "*windows*"
+build_system = "makefiles"
+dev_dependencies = ["macros@1.20.2", "libtool@2.5.4"]
+pre_install = [
+    "cmake -E rename ${BUILD_DIR}/.libs/libffi-8.lib ${BUILD_DIR}/.libs/libffi.lib",
+]
+post_install = [
+    "cmake -E make_directory ${PACKAGE_DIR}/bin",
+    "cmake -E copy ${BUILD_DIR}/.libs/libffi.lib ${PACKAGE_DIR}/lib/libffi.lib",
+    "cmake -E rename ${PACKAGE_DIR}/lib/libffi-8.dll ${PACKAGE_DIR}/bin/libffi-8.dll",
+]
+options = [
+    "CC=\"${REPO_DIR}/msvcc.sh -m64\"",
+    "CXX=\"${REPO_DIR}/msvcc.sh -m64\"",
+    "LD=link",
+    "CPP=\"cl -nologo -EP\"",
+    "CXXCPP=\"cl -nologo -EP\"",
+    "CPPFLAGS=\"-DFFI_BUILDING_DLL\"",
+    "--disable-docs",
+    "--enable-portable-binary",
+    "--disable-multi-os-directory",
+    "--disable-dependency-tracking",
+]

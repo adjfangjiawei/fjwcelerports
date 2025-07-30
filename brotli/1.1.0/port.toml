@@ -1,0 +1,6 @@
+[package]
+url = "https://github.com/google/brotli.git"
+ref = "v1.1.0"
+
+[[build_configs]]
+build_system = "cmake"

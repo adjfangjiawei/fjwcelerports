@@ -1,0 +1,15 @@
+[package]
+url = "https://gitlab.freedesktop.org/xorg/lib/libxau.git"
+ref = "libXau-1.0.12"
+
+[[build_configs]]
+build_system = "makefiles"
+envs_windows = [
+    "CFLAGS=-DX_NOT_POSIX -DWIN32 -D_WINSOCKAPI_",
+    "CXXFLAGS=-DX_NOT_POSIX -DWIN32 -D_WINSOCKAPI_",
+]
+dependencies = ["xorgproto@2024.1"]
+dev_dependencies = [
+    "macros@1.20.2",
+    "libtool@2.5.4",
+]

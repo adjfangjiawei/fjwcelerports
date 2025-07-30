@@ -1,0 +1,8 @@
+[package]
+url = "https://gitlab.gnome.org/GNOME/libxslt.git"
+ref = "v1.1.42"
+
+[[build_configs]]
+build_system = "cmake"
+options = ["-DLIBXSLT_WITH_PYTHON=OFF"]
+dependencies = ["libxml2@2.13.5"]

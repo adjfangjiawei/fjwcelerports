@@ -1,0 +1,9 @@
+[package]
+url = "https://gitlab.freedesktop.org/xorg/proto/dri2proto.git"
+ref = "dri2proto-2.8"
+
+[[build_configs]]
+patches = ["no_configure.patch"]
+build_system = "makefiles"
+dev_dependencies = ["macros@1.20.2"]
+options = ["--disable-dri3"]

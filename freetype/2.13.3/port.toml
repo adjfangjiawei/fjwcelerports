@@ -1,0 +1,16 @@
+[package]
+url = "https://gitlab.freedesktop.org/freetype/freetype.git"
+ref = "VER-2-13-3"
+
+[[build_configs]]
+build_system = "cmake"
+dependencies = [
+    "zlib@1.3.1",
+    "brotli@1.1.0",
+    "libpng@1.6.49",
+]
+options = [
+    "-DFT_DISABLE_HARFBUZZ=ON",
+]
+
+# freetype2 and harfbuzz rely on each other by default.

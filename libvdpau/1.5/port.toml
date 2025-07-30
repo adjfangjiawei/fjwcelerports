@@ -1,0 +1,11 @@
+[package]
+url = "https://gitlab.freedesktop.org/vdpau/libvdpau.git"
+ref = "1.5"
+
+[[build_configs]]
+pattern = "*linux*"
+build_system = "meson"
+dependencies = ["libx11@1.8.11"]
+
+# Note:
+# This library support linux only.

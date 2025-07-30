@@ -1,0 +1,8 @@
+[package]
+url = "https://github.com/intel/libva.git"
+ref = "2.22.0"
+
+[[build_configs]]
+build_system = "meson"
+dependencies = ["libdrm@2.4.124", "libxfixes@6.0.1"]
+dev_dependencies = ["wayland@1.23.1"]

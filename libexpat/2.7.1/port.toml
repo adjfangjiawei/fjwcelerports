@@ -1,0 +1,8 @@
+[package]
+url = "https://github.com/libexpat/libexpat.git"
+ref = "R_2_7_1"
+src_dir = "expat"
+
+[[build_configs]]
+build_system = "cmake"
+options = ["-DBUILD_examples=OFF", "-DBUILD_tests=OFF"]

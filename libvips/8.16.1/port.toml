@@ -1,0 +1,10 @@
+[package]
+url = "https://github.com/libvips/libvips.git"
+ref = "v8.16.1"
+
+[[build_configs]]
+build_system = "meson"
+patches = ["fix_build_error.patch"]
+options = ["--libdir=lib"]
+dependencies = ["glib@2.84.1", "libexpat@2.7.1", "libjpeg@9f"]
+dev_dependencies = ["pkgconf@2.4.3", "glib@2.84.1"]

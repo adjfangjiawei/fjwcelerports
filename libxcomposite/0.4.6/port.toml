@@ -1,0 +1,12 @@
+[package]
+url = "https://gitlab.freedesktop.org/xorg/lib/libxcomposite.git"
+ref = "libXcomposite-0.4.6"
+
+[[build_configs]]
+pattern = "*linux*"
+build_system = "makefiles"
+dependencies = ["libxfixes@6.0.1"]
+dev_dependencies = ["macros@1.20.2", "pkgconf@2.4.3"]
+
+# Note:
+# This library support linux only.

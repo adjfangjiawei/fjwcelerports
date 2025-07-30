@@ -1,0 +1,11 @@
+[package]
+url = "https://invent.kde.org/frameworks/extra-cmake-modules.git"
+ref = "v6.11.0"
+
+[[build_configs]]
+build_system = "cmake"
+envs = ["TRACKFILEACCESS=false"]
+options = [
+	"-DCMAKE_C_FLAGS=-Werror=narrowing",
+	"-DCMAKE_CXX_FLAGS=-Werror=narrowing",
+]

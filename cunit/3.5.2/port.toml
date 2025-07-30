@@ -1,0 +1,8 @@
+[package]
+url = "https://gitlab.com/cunity/cunit.git"
+ref = "3.5.2"
+src_dir = "CUnit"
+
+[[build_configs]]
+build_system = "cmake"
+options = ["-DCUNIT_CMAKE_INSTALL=yes"]

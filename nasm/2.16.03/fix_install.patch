@@ -1,0 +1,15 @@
+diff -Nur src/Makefile.in src_fix/Makefile.in
+--- src/Makefile.in	2025-07-06 18:01:34.578062935 +0800
++++ src_fix/Makefile.in	2025-07-06 18:02:14.747499176 +0800
+@@ -393,10 +393,7 @@
+ 
+ install: $(PROGS)
+ 	$(MKDIR_P) $(DESTDIR)$(bindir)
+-	$(INSTALL_PROGRAM) $(PROGS) $(DESTDIR)$(bindir)/
+-	$(MKDIR_P) $(DESTDIR)$(mandir)/man1
+-	$(INSTALL_DATA) $(srcdir)/nasm.1 $(DESTDIR)$(mandir)/man1/nasm.1
+-	$(INSTALL_DATA) $(srcdir)/ndisasm.1 $(DESTDIR)$(mandir)/man1/ndisasm.1
++	$(INSTALL_PROGRAM) $(PROGS) $(DESTDIR)$(bindir)
+ 
+ clean:
+ 	for d in . $(SUBDIRS) $(XSUBDIRS); do \

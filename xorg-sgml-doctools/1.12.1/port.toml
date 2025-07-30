@@ -1,0 +1,7 @@
+[package]
+url = "https://gitlab.freedesktop.org/xorg/doc/xorg-sgml-doctools.git"
+ref = "xorg-sgml-doctools-1.12.1"
+
+[[build_configs]]
+build_system = "makefiles"
+dev_dependencies = ["macros@1.20.2"]

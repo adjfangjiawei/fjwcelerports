@@ -1,0 +1,27 @@
+[package]
+url = "https://github.com/openssl/openssl.git"
+ref = "OpenSSL_1_1_1w"
+
+# ============== build for aarch64-linux ============== #
+[[build_configs]]
+pattern = "aarch64-linux*"
+build_system = "makefiles"
+build_shared = "shared"
+build_static = "no-shared"
+options = ["--libdir=lib", "linux-aarch64", "no-tests"]
+
+# ============== build for x86_64-linux ============== #
+[[build_configs]]
+pattern = "x86_64-linux*"
+build_system = "makefiles"
+build_shared = "shared"
+build_static = "no-shared"
+options = ["--libdir=lib", "linux-x86_64", "no-tests"]
+
+# ============== build for windows ============== #
+[[build_configs]]
+pattern = "*windows*"
+build_system = "makefiles"
+build_shared = "shared"
+build_static = "no-shared"
+options = ["VC-WIN64A", "--openssldir=ssl", "--libdir=lib", "no-tests"]

@@ -1,0 +1,8 @@
+[package]
+url = "https://ftp.gnu.org/gnu/gdbm/gdbm-1.25.tar.gz"
+ref = "1.25"
+
+[[build_configs]]
+build_system = "makefiles"
+
+# freetype2 and harfbuzz rely on each other by default.

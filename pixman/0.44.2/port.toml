@@ -1,0 +1,6 @@
+[package]
+url = "https://gitlab.freedesktop.org/pixman/pixman.git"
+ref = "pixman-0.44.2"
+
+[[build_configs]]
+build_system = "meson"

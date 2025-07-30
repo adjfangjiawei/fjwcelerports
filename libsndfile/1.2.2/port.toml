@@ -1,0 +1,7 @@
+[package]
+url = "https://github.com/libsndfile/libsndfile.git"
+ref = "1.2.2"
+
+[[build_configs]]
+build_system = "cmake"
+dependencies = ["opus@1.5.2"]

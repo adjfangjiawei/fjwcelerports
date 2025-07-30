@@ -1,0 +1,8 @@
+[package]
+url = "https://gitlab.gnome.org/GNOME/libxml2.git"
+ref = "v2.13.5"
+
+[[build_configs]]
+build_system = "cmake"
+options = ["-DLIBXML2_WITH_PYTHON=OFF"]
+dependencies_windows = ["libiconv@1.14"]

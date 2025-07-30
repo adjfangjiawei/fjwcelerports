@@ -1,0 +1,16 @@
+diff -Nur src/compat/windows/makedef src_fix/compat/windows/makedef
+--- src/compat/windows/makedef	2023-11-10 07:38:51.000000000 +0800
++++ src_fix/compat/windows/makedef	2025-06-01 13:04:44.835936800 +0800
+@@ -45,11 +45,7 @@
+ 
+ trap 'rm -f -- $libname' EXIT
+ 
+-if [ -n "$AR" ]; then
+-    $AR rcs ${libname} $@ >/dev/null
+-else
+-    lib.exe -out:${libname} $@ >/dev/null
+-fi
++lib.exe -out:${libname} $@ >/dev/null
+ if [ $? != 0 ]; then
+     echo "Could not create temporary library." >&2
+     exit 1

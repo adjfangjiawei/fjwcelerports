@@ -1,0 +1,8 @@
+[package]
+url = "https://gitlab.freedesktop.org/xorg/lib/libxtst.git"
+ref = "libXtst-1.2.5"
+
+[[build_configs]]
+build_system = "makefiles"
+dependencies = ["libxi@1.8.2"]
+dev_dependencies = ["macros@1.20.2"]

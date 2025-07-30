@@ -1,0 +1,14 @@
+[package]
+url = "https://code.videolan.org/videolan/x264.git"
+ref = "stable"
+
+[[build_configs]]
+build_system = "makefiles"
+build_shared = "--enable-shared"
+build_static = "--enable-static"
+patches = ["fix_windows_build.patch"]
+dev_dependencies = ["nasm@2.16.03"]
+options = [
+    "--sysroot=${SYSROOT}",
+    "--cross-prefix=${CROSSTOOL_PREFIX}",
+]

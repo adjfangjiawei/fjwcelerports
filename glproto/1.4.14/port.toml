@@ -1,0 +1,20 @@
+[package]
+url = "https://gitlab.freedesktop.org/xorg/proto/glproto.git"
+ref = "glproto-1.4.17"
+
+# ============== build for aarch64-linux ============== #
+[[build_configs]]
+pattern = "aarch64-linux*"
+build_system = "makefiles"
+dev_dependencies = ["macros@1.20.2"]
+options = ["--host=arm-linux"]
+
+# ============== build for x86_64-linux ============== #
+[[build_configs]]
+pattern = "x86_64-linux*"
+build_system = "makefiles"
+dev_dependencies = ["macros@1.20.2"]
+options = ["--host=x86_64-linux"]
+
+# Note:
+# This library support linux only.

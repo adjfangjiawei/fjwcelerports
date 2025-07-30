@@ -1,0 +1,6 @@
+[package]
+url = "https://github.com/libcheck/check.git"
+ref = "0.15.2"
+
+[[build_configs]]
+build_system = "cmake"

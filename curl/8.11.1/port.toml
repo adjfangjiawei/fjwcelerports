@@ -1,0 +1,14 @@
+[package]
+  url = "https://github.com/curl/curl.git"
+  ref = "curl-8_11_1"
+
+[[build_configs]]
+  build_system = "cmake"
+  options = [
+    "-DBUILD_TESTING=OFF",
+    "-DBUILD_CURL_EXE=OFF",
+    "-DBUILD_EXAMPLES=OFF",
+    "-DBUILD_LIBCURL_DOCS=OFF",
+    "-DBUILD_MISC_DOCS=OFF",
+    "-DCURL_ENABLE_SSL=OFF"
+  ]

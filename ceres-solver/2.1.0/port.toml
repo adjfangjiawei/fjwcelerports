@@ -1,0 +1,12 @@
+[package]
+  url = "https://github.com/ceres-solver/ceres-solver.git"
+  ref = "2.1.0"
+
+[[build_configs]]
+  build_system = "cmake"
+  dependencies = ["eigen@3.4.0", "glog@0.6.0"]
+  options = [
+    "-DBUILD_EXAMPLES=OFF",
+    "-DBUILD_TESTING=OFF",
+    "-DBUILD_DOCUMENTAGION=OFF"
+  ]

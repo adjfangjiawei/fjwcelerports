@@ -1,0 +1,8 @@
+[package]
+url = "https://github.com/open-source-parsers/jsoncpp.git"
+ref = "1.9.5"
+
+[[build_configs]]
+build_system = "cmake"
+patches = ["fix_cmake_install.patch"]
+options = ["-DJSONCPP_WITH_TESTS=OFF"]

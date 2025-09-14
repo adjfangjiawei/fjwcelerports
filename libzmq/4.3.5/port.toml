@@ -1,0 +1,11 @@
+[package]
+  url = "https://github.com/zeromq/libzmq.git"
+  ref = "v4.3.5"
+
+[[build_configs]]
+  build_system = "cmake"
+  options = [
+    "-DWITH_PERF_TOOL=OFF",
+    "-DZMQ_BUILD_TESTS=OFF",
+    "-DENABLE_CPACK=OFF"
+  ]

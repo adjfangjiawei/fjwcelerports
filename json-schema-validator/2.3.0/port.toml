@@ -1,0 +1,10 @@
+[package]
+url = "https://github.com/pboettch/json-schema-validator.git"
+ref = "2.3.0"
+
+[[build_configs]]
+build_system = "cmake"
+options = [
+  "-DJSON_VALIDATOR_BUILD_TESTS=OFF",
+  "-DJSON_VALIDATOR_BUILD_EXAMPLES=OFF",
+]

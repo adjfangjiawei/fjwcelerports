@@ -1,0 +1,12 @@
+[package]
+  url = "https://github.com/anholt/libepoxy.git"
+  ref = "1.5.4"
+
+[[build_configs]]
+  build_system = "meson"
+  options = [
+    "-Dtests=False",
+    "-Ddocs=False",
+    "-Degl=no",
+    "-Dglx=no"
+  ]

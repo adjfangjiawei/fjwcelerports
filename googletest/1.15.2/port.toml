@@ -1,0 +1,6 @@
+[package]
+  url = "https://github.com/google/googletest.git"
+  ref = "v1.5.2"
+
+[[build_configs]]
+  build_system = "cmake"

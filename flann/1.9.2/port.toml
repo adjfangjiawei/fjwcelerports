@@ -1,0 +1,13 @@
+[package]
+  url = "https://github.com/flann-lib/flann.git"
+  ref = "1.9.2"
+
+[[build_configs]]
+  build_system = "cmake"
+  options = [
+    "-DBUILD_DOC=OFF",
+    "-DBUILD_EXAMPLES=OFF",
+    "-DBUILD_TESTS=OFF",
+    "-DBUILD_MATLAB_BINDINGS=OFF",
+    "-DBUILD_PYTHON_BINDINGS=OFF"
+  ]

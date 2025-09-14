@@ -1,0 +1,13 @@
+[package]
+  url = "https://github.com/borglab/gtsam.git"
+  ref = "4.2.0"
+
+[[build_configs]]
+  build_system = "cmake"
+  dependencies = ["boost@1.87.0", "eigen@3.4.0"]
+  options = [
+    "-DGTSAM_BUILD_EXAMPLES_ALWAYS=OFF",
+    "-DGTSAM_BUILD_TESTS=OFF",
+    "-DGTSAM_BUILD_WITH_MARCH_NATIVE=OFF",
+    "-DGTSAM_WITH_TBB=OFF"
+  ]

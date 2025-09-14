@@ -1,0 +1,6 @@
+[package]
+  url = "https://mirrors.nju.edu.cn/gnu/gawk/gawk-5.3.2.tar.xz"
+  ref = "5.3.2"
+
+[[build_configs]]
+  build_system = "makefiles"

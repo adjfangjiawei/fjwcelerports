@@ -5,6 +5,7 @@ ref = "1.27.1"
 [[build_configs]]
 pattern = "*linux*"
 build_system = "meson"
+dev_dependencies = ["pkgconf@2.4.3"]
 
 # Note:
 # This library support linux only.

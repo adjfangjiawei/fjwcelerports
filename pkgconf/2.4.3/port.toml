@@ -4,4 +4,4 @@ ref = "pkgconf-2.4.3"
 
 [[build_configs]]
 build_system = "meson"
-options = ["-Db_lundef=false"]
+options = ["-Db_lundef=false", "-Dtests=disabled"]

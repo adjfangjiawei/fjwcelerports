@@ -9,8 +9,7 @@ build_system = "makefiles"
 envs = [
     "CFLAGS=-Wno-pointer-sign -Wno-incompatible-pointer-types -Wno-stringop-overread -Wno-stringop-truncation",
 ]
-dependencies = ["x264@stable"]
-dev_dependencies = ["pkgconf@2.4.3", "nasm@2.16.03"]
+dev_dependencies = ["nasm@2.16.03"]
 options = [
     "--sysroot=${SYSROOT}",
     "--cross-prefix=${CROSSTOOL_PREFIX}",
@@ -30,7 +29,7 @@ build_system = "makefiles"
 patches = [
     "fix_windows_build.patch"
 ]
-dev_dependencies = ["pkgconf@2.4.3", "nasm@2.16.03"]
+dev_dependencies = ["nasm@2.16.03"]
 post_install = [
     "cmake -E rename ${PACKAGE_DIR}/bin/avcodec.lib ${PACKAGE_DIR}/lib/avcodec.lib",
     "cmake -E rename ${PACKAGE_DIR}/bin/avdevice.lib ${PACKAGE_DIR}/lib/avdevice.lib",

@@ -4,7 +4,7 @@ ref = "llvmorg-15.0.7"
 src_dir = "llvm"
 
 [[build_configs]]
-build_system = "ninja"
+build_system = "cmake"
 options = [
     "-DLLVM_ENABLE_PROJECTS='clang'",
     "-DLLVM_TARGETS_TO_BUILD='X86;AMDGPU'",

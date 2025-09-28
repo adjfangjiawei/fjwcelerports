@@ -8,5 +8,4 @@ options = [
     "-DBUILD_SHARED_LIBS=ON",
     "-DBUILD_STATIC_LIBS=OFF",
     "-DBUILD_TESTING=OFF",
-    "-DCMAKE_BUILD_TYPE=Release",
 ]

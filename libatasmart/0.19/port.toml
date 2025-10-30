@@ -1,0 +1,6 @@
+[package]
+  url                 = "https://github.com/libatasmart/libatasmart.git"
+  ref                 = "v0.19"
+
+[[build_configs]]
+  build_system        = "meson" 

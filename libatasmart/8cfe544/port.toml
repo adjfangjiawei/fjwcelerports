@@ -1,6 +1,8 @@
 [package]
   url                 = "https://github.com/libatasmart/libatasmart.git"
-  ref                 = "v0.19"
+  ref                 = "8cfe544"
 
 [[build_configs]]
   build_system        = "meson" 
+  dependencies        = ["libudev@1.8.2"]
+  dev_dependencies        = ["pkgconf@2.4.3"]

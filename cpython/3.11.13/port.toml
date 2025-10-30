@@ -5,7 +5,7 @@ ref = "v3.11.13"
 [[build_configs]]
 pattern = "*linux*"
 build_system = "makefiles"
-dev_dependencies = ["cpython@3.11.13"]
+dev_dependencies = []
 options = [
     "--build=${SYSTEM_PROCESSOR}",
     "--with-build-python=${DEPS_DEV_DIR}/bin/python3",

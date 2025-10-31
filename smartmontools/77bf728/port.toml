@@ -1,0 +1,8 @@
+[package]
+  url                 = "https://github.com/smartmontools/smartmontools.git"
+  ref                 = "main"
+
+[[build_configs]]
+  build_system        = "makefiles" 
+  dependencies        = []
+  dev_dependencies        = ["pkgconf@2.4.3"]

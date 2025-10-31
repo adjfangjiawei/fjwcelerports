@@ -1,0 +1,12 @@
+[package]
+url = "https://github.com/Distrotech/help2man.git"
+ref = "master"
+
+[[build_configs]]
+pattern = "*linux*"
+build_system = "makefiles"
+dev_dependencies = []
+dependencies = []
+
+# Note:
+# This library support linux only.

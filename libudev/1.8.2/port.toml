@@ -1,7 +1,7 @@
 [package]
   url                 = "https://github.com/mcatalancid/libudev.git"
-  ref                 = "3d27a9942a882a4d7360b2a5ef28fa0f989288bf"
+  ref                 = "1.8.2"
 
 [[build_configs]]
   build_system        = "makefiles"
-  dev_dependencies        = ["util-linux@2.41"]
+  dependencies        = ["util-linux@2.41"]

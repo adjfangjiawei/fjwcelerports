@@ -1,0 +1,9 @@
+[package]
+url = "https://gitlab.gnome.org/GNOME/gtk-doc.git"
+ref = "1.35.1"
+
+[[build_configs]]
+build_system = "meson"
+pre_configure = ["pip3 install pygments"]
+dev_dependencies = ["libxslt@1.1.42","itstool@2.0.7","gettext@0.26"]
+dependencies = ["glib@2.84.1"]

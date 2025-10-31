@@ -1,0 +1,9 @@
+[package]
+url = "https://github.com/cmajor-lang/cmajor.git"
+ref = "1.0.3019"
+
+[[build_configs]]
+build_system = "cmake"
+pre_configure = []
+dev_dependencies = []
+dependencies = ["boost@1.87.0"]

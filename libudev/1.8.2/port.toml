@@ -4,4 +4,5 @@
 
 [[build_configs]]
   build_system        = "makefiles"
-  dependencies        = ["util-linux@2.41"]
+  dev_dependencies        = ["gtk-doc@4.17.6"]
+  dependencies        = ["ncurses@6.5"]

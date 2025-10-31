@@ -1,0 +1,10 @@
+[package]
+  url                 = "https://github.com/eBay/NuRaft.git"
+  ref                 = "v3.0.0"
+
+[[build_configs]]
+  build_system        = "cmake" 
+  dependencies        = ["boost@1.87.0","openssl@3.5.0"]
+  pre_configure       = []
+  dev_dependencies        = []
+  options             = ["-DBOOST_INCLUDE_PATH=\"${DEPS_DIR}/include\"", "-DBOOST_LIBRARY_PATH=\"${DEPS_DIR}/lib\"","-DOPENSSL_INCLUDE_PATH=\"${DEPS_DIR}/include\"", "-DOPENSSL_LIBRARY_PATH=\"${DEPS_DIR}/lib\""]

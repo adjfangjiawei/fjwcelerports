@@ -14,7 +14,7 @@ dependencies = [
     "libxcb@1.17.0",
     "xz@5.8.1"
 ]
-dev_dependencies = ["gettext@0.25"]
+dev_dependencies = []
 options = ["-Ddoxygen=false", "-Ddatabase=gdbm", "-Ddaemon=false"]
 
 # Note:

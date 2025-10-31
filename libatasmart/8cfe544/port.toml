@@ -4,5 +4,5 @@
 
 [[build_configs]]
   build_system        = "meson" 
-  dependencies        = ["libudev@1.8.2"]
+  dependencies        = ["libudev@1.8.2","libbsd@0.12.2"]
   dev_dependencies        = ["pkgconf@2.4.3"]

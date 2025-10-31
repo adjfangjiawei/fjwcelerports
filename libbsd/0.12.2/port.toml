@@ -5,4 +5,5 @@ supported_hosts = ["linux", "darwin"]
 
 [[build_configs]]
 build_system = "makefiles"
-dev_dependencies = ["openssl@3.5.0"]
+pre_configure = ["cd ${REPO_DIR} && ${REPO_DIR}/autogen"]
+dependencies = ["libmd@1.1.0"]

@@ -1,0 +1,9 @@
+[package]
+url = "https://github.com/scop/bash-completion.git"
+ref = "2.17.0"
+
+[[build_configs]]
+build_system = "makefiles"
+pre_configure = ["cd ${REPO_DIR} && autoreconf -fi"]
+dev_dependencies = []
+dependencies = []

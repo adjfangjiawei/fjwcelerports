@@ -1,0 +1,9 @@
+[package]
+url = "https://github.com/rust-lang/rust.git"
+ref = "1.91.0"
+
+[[build_configs]]
+build_system = "makefiles"
+pre_configure = []
+dev_dependencies = []
+dependencies = []

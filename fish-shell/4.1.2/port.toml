@@ -1,0 +1,8 @@
+[package]
+url = "https://github.com/fish-shell/fish-shell.git"
+ref = "4.1.2"
+
+[[build_configs]]
+build_system = "cmake"
+dev_dependencies = ["rust@1.91.0"]
+dependencies = []

@@ -9,7 +9,7 @@ build_shared = "--with-shared"
 options = [
     "--disable-stripping",
     "--with-termlib",
-    "--disable-widec"
+    "--with-versioned-syms"
 ]
 
 # Note:

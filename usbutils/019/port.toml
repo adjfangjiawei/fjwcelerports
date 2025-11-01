@@ -1,0 +1,9 @@
+[package]
+url = "https://git.kernel.org/pub/scm/linux/kernel/git/gregkh/usbutils.git"
+ref = "v019"
+
+[[build_configs]]
+build_system = "makefiles"
+options = []
+dev_dependencies = []
+dependencies = ["systemd@258.1"]

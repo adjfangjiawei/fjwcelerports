@@ -1,0 +1,9 @@
+[package]
+url = "https://github.com/yonasBSD/scdoc.git"
+ref = "main"
+
+[[build_configs]]
+build_system = "makefiles"
+pre_configure = []
+dev_dependencies = []
+dependencies = []

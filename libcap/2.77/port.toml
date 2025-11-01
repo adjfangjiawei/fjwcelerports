@@ -1,0 +1,8 @@
+[package]
+url = "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.77.tar.xz"
+ref = "v2.77"
+
+[[build_configs]]
+build_system = "makefiles"
+dev_dependencies = []
+dependencies = []

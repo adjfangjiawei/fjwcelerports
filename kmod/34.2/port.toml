@@ -4,10 +4,11 @@ ref = "v34.2"
 
 [[build_configs]]
 build_system = "meson"
-dev_dependencies = [
-    "pkgconf@2.4.3",
-    "bash-completion@2.17.0",
-    "fish-shell@4.1.2",
-    "zstd@1.5.7",
-]
+dev_dependencies = ["pkgconf@2.4.3", "bash-completion@2.17.0", "scdoc@main"]
 dependencies = []
+options = [
+    "-Dzlib=disabled",
+    "-Dxz=disabled",
+    "-Dzstd=disabled",
+    "-Dopenssl=disabled",
+]

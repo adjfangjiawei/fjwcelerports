@@ -1,0 +1,7 @@
+[package]
+url = "https://github.com/sago007/PlatformFolders.git"
+ref = "4.3.0"
+
+[[build_configs]]
+build_system = "cmake"
+dependencies = []

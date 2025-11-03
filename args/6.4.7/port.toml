@@ -1,0 +1,8 @@
+[package]
+url = "https://github.com/Taywee/args.git"
+ref = "6.4.7"
+supported_hosts = ["linux"]
+
+[[build_configs]]
+build_system = "cmake"
+dev_dependencies = []

@@ -1,0 +1,11 @@
+[package]
+url = "https://github.com/guillemj/libmd.git"
+ref = "1.1.0"
+
+[[build_configs]]
+build_system = "makefiles"
+build_in_source = true
+dev_dependencies = ["libtool@2.5.4"]
+
+# Note:
+# This library support linux only.

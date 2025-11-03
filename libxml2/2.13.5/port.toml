@@ -6,3 +6,6 @@ ref = "v2.13.5"
 build_system = "cmake"
 options = ["-DLIBXML2_WITH_PYTHON=OFF"]
 dependencies_windows = ["libiconv@1.14"]
+post_install = [
+    "cmake -E rename ${PACKAGE_DIR}/lib/cmake/libxml2-2.13.5 ${PACKAGE_DIR}/lib/cmake/libxml2",
+]

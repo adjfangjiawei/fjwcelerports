@@ -8,7 +8,6 @@ ref = "2.6.4"
 [[build_configs]]
 pattern = "*linux*"
 build_system = "makefiles"
-dev_dependencies = ["autoconf@2.72", "gettext@0.25", "libtool@2.5.4"]
 
 # Note:
 # This library support linux only.

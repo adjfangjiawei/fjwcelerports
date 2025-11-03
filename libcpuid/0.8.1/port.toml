@@ -1,0 +1,6 @@
+[package]
+url = "https://github.com/anrieff/libcpuid.git"
+ref = "v0.8.1"
+
+[[build_configs]]
+build_system = "cmake"

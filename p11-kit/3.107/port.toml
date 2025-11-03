@@ -6,12 +6,7 @@ ref = "0.25.5"
 pattern = "*linux*"
 build_system = "makefiles"
 dependencies = ["libffi@3.4.8"]
-dev_dependencies = [
-    "macros@1.20.2",
-    "libtool@2.5.4",
-    "gettext@0.25",
-    "pkgconf@2.4.3",
-]
+dev_dependencies = ["pkgconf@2.4.3"]
 options = ["--without-libtasn1"]
 
 # Note:
